@@ -1,0 +1,11 @@
+.card {
+  background-color: $white;
+  border-radius: $border-radius-100;
+
+  &__img {
+    border-radius: $border-radius-100 $border-radius-100 0 0;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+  }
+}

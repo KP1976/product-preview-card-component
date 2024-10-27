@@ -136,6 +136,7 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 1.75rem 1rem;
   width: 100%;
 }
 
@@ -161,4 +162,15 @@ main {
   font-style: normal;
   font-weight: 700;
   src: url("../assets/fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+}
+.card__img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
 }
