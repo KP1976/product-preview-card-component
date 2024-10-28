@@ -174,3 +174,9 @@ main {
      object-fit: cover;
   max-width: 100%;
 }
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+  padding: 1.5rem;
+}
