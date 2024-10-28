@@ -41,4 +41,28 @@
   &__description-wrapper {
     @include flex-column($space-250);
   }
+
+  &__description {
+    color: $dark-grayish-blue;
+    font-size: $font-size-175;
+    line-height: $line-height-165;
+  }
+
+  &__price {
+    align-items: center;
+    @include flex-row($space-250);
+
+    &--current {
+      color: $dark-cyan;
+      font-family: "Fraunces";
+      font-size: $font-size-400;
+      font-weight: 700;
+    }
+
+    &--original {
+      color: $dark-grayish-blue;
+      font-size: $font-size-150;
+      text-decoration: line-through;
+    }
+  }
 }

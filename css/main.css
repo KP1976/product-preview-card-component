@@ -210,3 +210,24 @@ main {
   flex-direction: column;
   gap: 1.25rem;
 }
+.card__description {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+.card__price {
+  align-items: center;
+  display: flex;
+  gap: 1.25rem;
+}
+.card__price--current {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card__price--original {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
