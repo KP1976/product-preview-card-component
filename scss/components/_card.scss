@@ -10,9 +10,27 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    gap: $space-200 0;
+    @include flex-column($space-200);
     padding: $space-300;
+  }
+
+  &__product {
+    @include flex-column($space-150);
+  }
+
+  &__product-category {
+    color: $dark-grayish-blue;
+    font-size: $font-size-150;
+    font-weight: 500;
+    letter-spacing: $letter-spacing-5;
+    text-transform: uppercase;
+  }
+
+  &__product-name {
+    color: $very-dark-blue;
+    font-family: "Fraunces";
+    font-size: $font-size-400;
+    font-weight: 700;
+    line-height: $line-height-100;
   }
 }
