@@ -65,4 +65,16 @@
       text-decoration: line-through;
     }
   }
+
+  &__button {
+    @include flex-row($space-150);
+    background-color: $dark-cyan;
+    border: none;
+    border-radius: $border-radius-100;
+    color: $white;
+    font-size: $font-size-175;
+    font-weight: 700;
+    justify-content: center;
+    padding: $space-200 0;
+  }
 }
