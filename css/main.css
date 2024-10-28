@@ -243,3 +243,12 @@ main {
   justify-content: center;
   padding: 1rem 0;
 }
+
+.attribution {
+  font-size: 0.875rem;
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+.attribution__link {
+  color: hsl(158, 36%, 37%);
+}
