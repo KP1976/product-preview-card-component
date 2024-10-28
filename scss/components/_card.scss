@@ -33,4 +33,12 @@
     font-weight: 700;
     line-height: $line-height-100;
   }
+
+  &__info {
+    @include flex-column($space-200);
+  }
+
+  &__description-wrapper {
+    @include flex-column($space-250);
+  }
 }

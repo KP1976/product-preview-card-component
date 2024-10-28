@@ -200,3 +200,13 @@ main {
   font-weight: 700;
   line-height: 1;
 }
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
