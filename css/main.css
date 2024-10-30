@@ -173,7 +173,7 @@ main {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100%;
+  width: 100%;
 }
 .card__content {
   display: flex;
@@ -250,5 +250,5 @@ main {
   text-align: center;
 }
 .attribution__link {
-  color: hsl(158, 36%, 37%);
+  font-weight: 700;
 }

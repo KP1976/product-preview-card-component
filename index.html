@@ -26,7 +26,12 @@
       <article class="card">
         <img
           class="card__img"
-          src="./assets/images/image-product-mobile.jpg"
+          src="./assets/images/image-product-desktop.jpg"
+          srcset="
+            ./assets/images/image-product-mobile.webp  599w,
+            ./assets/images/image-product-desktop.webp 600w
+          "
+          sizes="(max-width: 599px) 599px, 600px"
           alt="Gabrielle Essence Eau De Parfum"
         />
         <div class="card__content">
