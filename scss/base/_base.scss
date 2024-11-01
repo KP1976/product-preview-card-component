@@ -20,4 +20,10 @@ main {
   flex-direction: column;
   padding: $space-350 $space-200;
   width: 100%;
+
+  @include respond-to($breakpoint-medium) {
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
 }
