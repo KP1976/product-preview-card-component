@@ -1,92 +1,109 @@
-# Frontend Mentor - Product preview card component
+# Product Card Component
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the Product Card Component challenge, showcasing a responsive product card design for a perfume product.
 
-## Welcome! 👋
+## Table of Contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+- [Project Structure](#project-structure)
+- [Implementation Details](#implementation-details)
+  - [Built with](#built-with)
+  - [CSS Architecture](#css-architecture)
+  - [Responsive Design](#responsive-design)
+- [Getting Started](#getting-started)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### Features
 
-## The challenge
+- Responsive layout that adapts to different screen sizes
+- Modern CSS architecture using SCSS
+- Optimized images with WebP format and proper srcset implementation
+- Custom font loading with performance optimization
+- Interactive states for buttons and links
 
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
+### Screenshots
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+#### Desktop View
 
-Your users should be able to:
+![Desktop Design](design/desktop-preview.jpg)
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+#### Mobile View
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+![Mobile Design](design/mobile-design.jpg)
 
-## Where to find everything
+## Project Structure
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+```
+├── assets/
+│   ├── fonts/
+│   │   ├── fraunces-v31-latin-700.woff2
+│   │   ├── montserrat-v26-latin-500.woff2
+│   │   └── montserrat-v26-latin-700.woff2
+│   └── images/
+│       ├── image-product-desktop.jpg
+│       ├── image-product-desktop.webp
+│       ├── image-product-mobile.jpg
+│       └── image-product-mobile.webp
+├── scss/
+│   ├── abstracts/
+│   │   ├── _mixins.scss
+│   │   └── _variables.scss
+│   ├── base/
+│   │   ├── _fonts.scss
+│   │   └── _reset.scss
+│   ├── components/
+│   │   └── _card.scss
+│   └── layout/
+│       ├── _footer.scss
+│       └── _main.scss
+├── index.html
+└── main.css
+```
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## Implementation Details
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built with
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- SCSS
+- Modern CSS reset
+- Optimized font loading
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### CSS Architecture
 
-## Building your project
+The project uses a modular SCSS architecture with:
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Modern CSS reset for consistent cross-browser styling
+- Custom font declarations with optimized loading strategies
+- Component-based styling with BEM methodology
+- Responsive design using media queries
+- CSS custom properties for theme colors and reusable values
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### Responsive Design
 
-## Deploying your project
+- Mobile-first approach with breakpoint at 600px
+- Flexible images with srcset for different viewport sizes
+- Responsive typography and spacing
+- Optimized layouts for both mobile and desktop views
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+## Getting Started
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+1. Clone the repository
+2. Ensure you have a SCSS compiler installed
+3. Run the SCSS compiler to watch for changes:
+   ```bash
+   sass --watch scss:css
+   ```
+4. Open `index.html` in your browser
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## Author
 
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- Frontend Mentor - [@kp1976](https://www.frontendmentor.io/profile/KP1976)
+- Coded by Krzysztof Pawłowski
