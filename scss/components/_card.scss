@@ -12,15 +12,28 @@
     display: block;
     object-fit: cover;
     width: 100%;
+
+    @include respond-to($breakpoint-medium) {
+      border-radius: $border-radius-100 0 0 $border-radius-100;
+    }
   }
 
   &__content {
     @include flex-column($space-200);
     padding: $space-300;
+
+    @include respond-to($breakpoint-medium) {
+      @include flex-column($space-300);
+      padding: $space-400;
+    }
   }
 
   &__product {
     @include flex-column($space-150);
+
+    @include respond-to($breakpoint-medium) {
+      @include flex-column($space-250);
+    }
   }
 
   &__product-category {
@@ -41,10 +54,18 @@
 
   &__info {
     @include flex-column($space-200);
+
+    @include respond-to($breakpoint-medium) {
+      @include flex-column($space-325);
+    }
   }
 
   &__description-wrapper {
     @include flex-column($space-250);
+
+    @include respond-to($breakpoint-medium) {
+      @include flex-column($space-325);
+    }
   }
 
   &__description {
