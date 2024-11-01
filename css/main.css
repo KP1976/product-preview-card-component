@@ -289,6 +289,13 @@ main {
   font-weight: 700;
   justify-content: center;
   padding: 1rem 0;
+  transition: background-color 0.2s ease-in-out;
+}
+@media (min-width: 600px) {
+  .card__button:hover {
+    background-color: hsl(156, 42%, 18%);
+    cursor: pointer;
+  }
 }
 
 .attribution {

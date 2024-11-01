@@ -102,5 +102,13 @@
     font-weight: 700;
     justify-content: center;
     padding: $space-200 0;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      @include respond-to($breakpoint-medium) {
+        background-color: $very-dark-cyan;
+        cursor: pointer;
+      }
+    }
   }
 }
