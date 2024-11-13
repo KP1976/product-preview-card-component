@@ -24,21 +24,26 @@
   <body>
     <main>
       <article class="card">
-        <img
-          class="card__img"
-          src="./assets/images/image-product-desktop.jpg"
-          srcset="
-            ./assets/images/image-product-mobile.webp  599w,
-            ./assets/images/image-product-desktop.webp 600w
-          "
-          sizes="(max-width: 599px) 599px, 600px"
-          alt="Gabrielle Essence Eau De Parfum"
-        />
+        <picture class="card__img-wrapper">
+          <source
+            media="(max-width: 631px)"
+            srcset="./assets/images/image-product-mobile.webp"
+          />
+          <source
+            media="(min-width: 632px)"
+            srcset="./assets/images/image-product-desktop.webp"
+          />
+          <img
+            class="card__img"
+            src="./assets/images/image-product-desktop.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+          />
+        </picture>
         <div class="card__content">
-          <div class="card__product">
-            <h1 class="card__product-category">Perfume</h1>
-            <h2 class="card__product-name">Gabrielle Essence Eau De Parfum</h2>
-          </div>
+          <hgroup class="card__product">
+            <h2 class="card__product-category">Perfume</h2>
+            <h3 class="card__product-name">Gabrielle Essence Eau De Parfum</h3>
+          </hgroup>
           <div class="card__info">
             <div class="card__description-wrapper">
               <p class="card__description">

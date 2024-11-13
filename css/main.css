@@ -140,7 +140,7 @@ main {
   padding: 1.75rem 1rem;
   width: 100%;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   main {
     flex-direction: row;
     flex: 1 1 auto;
@@ -175,11 +175,15 @@ main {
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 37.5rem;
   }
+}
+.card__img-wrapper {
+  display: flex;
 }
 .card__img {
   border-radius: 0.5rem 0.5rem 0 0;
@@ -188,7 +192,7 @@ main {
      object-fit: cover;
   width: 100%;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   .card__img {
     border-radius: 0.5rem 0 0 0.5rem;
   }
@@ -199,7 +203,7 @@ main {
   gap: 1rem;
   padding: 1.5rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   .card__content {
     display: flex;
     flex-direction: column;
@@ -212,7 +216,7 @@ main {
   flex-direction: column;
   gap: 0.75rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   .card__product {
     display: flex;
     flex-direction: column;
@@ -238,7 +242,7 @@ main {
   flex-direction: column;
   gap: 1rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   .card__info {
     display: flex;
     flex-direction: column;
@@ -250,7 +254,7 @@ main {
   flex-direction: column;
   gap: 1.25rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   .card__description-wrapper {
     display: flex;
     flex-direction: column;
@@ -291,7 +295,7 @@ main {
   padding: 1rem 0;
   transition: background-color 0.2s ease-in-out;
 }
-@media (min-width: 600px) {
+@media (min-width: 39.5rem) {
   .card__button:hover {
     background-color: hsl(156, 42%, 18%);
     cursor: pointer;
